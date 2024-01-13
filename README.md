@@ -6,29 +6,11 @@ the sections to be included, what are the required measurements, what are the ot
 to include, etc. 
 
 ## What's New?
-**27.0.0** <sub>*Major Release*</sub>
+***No Information Available***
 
-*Change Logs*
- - [added]       Bold font-weight option on hovering and icons for the header menus
- - [added]       Input validation for search bar
- - [added]       FOI sidebar widget at the bottom of Transparency Seal Logo (Once click redirected to [https://www.foi.gov.ph])
- - [added]       REST API endpoint authentication
- - [added]       Font weight bold for menus on hover and active
- - [added]       Justify text on contents as default
- - [added]       Default Font Size for Text Heading if Image Logo is disabled in Theme Options Page
- - [enhanced]    Masthead to flex when screen resizing | For screen with size >= 699px
- - [enhanced]    Foundation folder/file/code that uses relative URL to use absolute URL
- - [fixed]       Compatibility issues on localhost
- - [fixed]       Critical error on theme options
- - [fixed]       Agency logo, Agency name | Agency tagline size
- - [temporary]   Disabled input field on Search shortcut key
- - [update]      PHP compatibility up to PHP 8.1
 
 ## Compatibility Specification
-- PHP 7.4 - 8.1
-- WordPress version 6.3 and up
-- WAMP Server version 3.2.2 - 3.3.2
-- XAMPP Server version 8.0.3
+***No Information Available***
 
 > [!IMPORTANT]
 > - **Use only the** [Approved Plugins](https://bit.ly/List-of-approved-plugins) by the **DICT-GWHS Team** to avoid any possible errors and vulnerability
@@ -42,7 +24,7 @@ to include, etc.
 
 ## Understanding Releases
 
-<img align="center" alt="Semantic Versioning" src="https://raw.githubusercontent.com/imcoffeevin06/SemanticVersioning/71b6e5e5461a5aef0419586caa5fe5738a6f0b83/Semantic%20Versioning.png" width="auto" height="auto" />
+<img align="center" alt="Semantic Versioning" src="https://raw.githubusercontent.com/MiCRO-6/semanticversioning/main/Semantic%20Versioning.png" width="auto" height="auto" />
 
 **MAJOR** <sub>version</sub>
 - Breaking Changes
@@ -66,82 +48,7 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 <sub>*no information available*</sub>
 
 **25.3.3**
-- [Update] Tabbed Theme Options
-- [fixed] conditional display on rightsidebar
-- [fixed] missing jquery file issue causing to disable all scripts within the page
-- [fixed] theme missing color option issue
-- [added] native style for alignleft alignright classes
-- [fixed] long text wrapping in menu
-- [added] URL Link support for banner Slider
-- [fixed] empty menu issue when nothing is assigned
-- [added] automatic display of auxiliary menu if menu is present, removed theme option selection
-- [fixed] banner left button bug.
-- [Update] Foundation version 6.2.2
-- [Features] Philippine Standard Time (PST)
-    - Font customization
-- [Features] Panel Top & Bottom section
-    - Background color customization
-- [Enhancement] Orbit Slider
-- [Enhancement] Responsive Mobile Menu
-- [Enhancement] Transparency Seal
-- [Enhancement] Accessibility Add-on
-    - High Contrast mode
-    - Skip to Content
-    - Skip to Footer
-- [fixed] mega menu structure
-- [fixed] banner slider full width
-- [added] feature image on post
-- [added] default widgets on theme activation
-	- transparency seal Logo widget
-	- philippine standard time widget
-- [added] theme customization on template's theme option
-    - Masthead logo image with text
-        - agency name
-        - tagline
-        - font color
-        - image logo alt text
-    - Content panel and sidebar customization
-        - border width
-        - border color
-        - border radius
-        - background color
-    - Content header font size and rendering
-    - Agency Footer's background color customization
-- [removed] the Accessibility Add-on
-    - High Contrast Mode
-    - Grayscale Mode
-    - Toggle font size
-- [fixed] Agency Footer extra padding.
-- [update] Changed the accessibility widget to right side 
-- [added] new accessibility features:
-  - Toggle High contrast mode
-  - Toggle Grey scale
-  - Popup Accessibility Statement
-- [fixed] Breadcrumbs '/' after Youre Here:
-- [fixed] Panel Top extra padding issue.
-- [added] mega menu feature
-- [enhanced]Sticky top menu
-- [added] drop shadow on drop down menu
-- [added] breadcrumbs support
-- [enhanced] Smaller headings for Agency footer (use h3 tag)
-- [enhanced] Smaller headings for Content Post (use h5 tag)
-- [enhanced] Smaller headings for widgets
-- [enhanced] Bannerd title paddings
-- [removed] box design on top and bottom panel, added custom class: box-mode
-- [enhanced] Smaller headings for Post Navigation (pagination) (use h4)
-- [enhanced] Automatic trim of character/word for Post lists
-- [fixed] Responsive Logo Support
-- [fixed] Accessibility shortcut bug 
-- [added] an option to automatically trim at specific characters/word for Post lists
-- [added] an option to removed published date
-- [added] an option to removed author
-- [removed] box effect on Author
-- [enhanced] new design
-- [added] new widget locations (New widget locations banner section 1, banner section 2, ear content 1, ear content 2 not yet usable)
-- [fixed] For banner content, use featured image to upload images, use the content area for linking the image to an external page, use the title for captions
-- [enhanced] Full width template functions
-- [enhanced] Text decoration for standard footer links
-- [enhanced] Slider get functions
+***No Information Available***
 
 <br>
 <hr>
