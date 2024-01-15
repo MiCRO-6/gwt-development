@@ -48,7 +48,7 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 <sub>*no information available*</sub>
 
 **25.3.3**
-***No Information Available***
+<sub>*no information available*</sub>
 
 <br>
 <hr>
@@ -59,14 +59,14 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 
 Since you are applying for DICT's Web Hosting you need to submit the following requirements:
 
- 1. Letter of intent written with your agency’s official letterhead
+ 1. Letter of intent written with your agencyâ€™s official letterhead
  2. [Web Hosting Service Application Form](https://drive.google.com/file/d/1Vl_bWkgm4hRQ-OCB8PPP6wykqjNzTdCL/view?usp=sharing)
 
 <br>
 
 **INSTRUCTION FOR LETTER OF INTENT**
 
-For new applications, the requesting agency is required to submit by email, written in the agency’s letterhead, an official letter stating the intent of your agency to avail the Web and/or DNS Hosting Service of DICT. The letter should indicate the technical persons of your Web and/or DNS Hosting and be duly signed by any of the following: Agency Head, Chief Information Officer, or the MIS Head. The request letter should be addressed to:  
+For new applications, the requesting agency is required to submit by email, written in the agencyâ€™s letterhead, an official letter stating the intent of your agency to avail the Web and/or DNS Hosting Service of DICT. The letter should indicate the technical persons of your Web and/or DNS Hosting and be duly signed by any of the following: Agency Head, Chief Information Officer, or the MIS Head. The request letter should be addressed to:  
 
 
 **Ivan John E. Uy**
