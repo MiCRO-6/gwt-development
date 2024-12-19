@@ -6,10 +6,8 @@ the sections to be included, what are the required measurements, what are the ot
 to include, etc. 
 
 ## What's New?
-**27.0.0** <sub>*Major Release*</sub>
+**27.0.0** <sub>*no information available*</sub>>
 
-*Change Logs*
-<sub>*no information available*</sub>
 
 ## Compatibility Specification
 - PHP 7.4 - 8.1
