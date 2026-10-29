@@ -3,7 +3,7 @@
  * gwt_wp functions and definitions
  *
  * @package gwt_wp
- * eol-109
+ * eol-119
  */
 
 /**
@@ -82,6 +82,16 @@ require get_template_directory() . '/inc/function-options.php';
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
+* Function for Access
+*/
+require get_template_directory() . '/inc/function-access.php';
+
+/**
+* Function for Activity
+*/
+require get_template_directory() . '/inc/function-activity.php';
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
@@ -104,17 +114,6 @@ if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
 }
 
 /**
-* Access Logs
-*/
-require get_template_directory() . '/inc/access-logs.php';
-
-/**
-* User Activity Logs
-*/
-require get_template_directory() . '/inc/user-activity-logs.php';
-
-/**
 * Anti-Click Jacking
 */
 require get_template_directory() . '/inc/addsec.php';
-

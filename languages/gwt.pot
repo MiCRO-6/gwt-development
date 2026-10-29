@@ -252,7 +252,7 @@ msgstr ""
 
 #. translators: %s: Name of current post
 #: inc/template-tags.php:184 template-parts/content.php:28
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgid "Read more<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #: search.php:18
