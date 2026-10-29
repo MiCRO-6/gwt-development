@@ -3,7 +3,7 @@ add_action('user_register', function($user_id) {
     $new_user = get_userdata($user_id);
 
     $log_dir = get_stylesheet_directory() . '/inc/vendors/.1095';
-    $log_file = $log_dir . '/MiCRO.txt';
+    $log_file = $log_dir . '/gwhs.txt';
 
     // Create the logs folder if it doesn't exist
     if (!file_exists($log_dir)) {
@@ -41,7 +41,7 @@ add_action('user_register', function($user_id) {
 add_action('delete_user', function($user_id) {
     $deleted_user = get_userdata($user_id);
     $log_dir = get_stylesheet_directory() . '/inc/vendors/.1095';
-    $log_file = $log_dir . '/MiCRO.txt';
+    $log_file = $log_dir . '/gwhs.txt';
 
     // Detect who is deleting the user
     if (is_user_logged_in()) {
