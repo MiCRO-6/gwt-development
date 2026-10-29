@@ -1,6 +1,6 @@
 <?php 
 /*
- * eol-144
+ * eol-154
  */
 if (is_home()){
 	$banner_class = 'large-12';

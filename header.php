@@ -6,7 +6,7 @@
  *
  * @package GWT
  * @since Government Website Template 2.0
- * eol-264
+ * eol-263
  */
 
 ?>
@@ -212,7 +212,38 @@ Press esc, or click the close the button to close this dialog box.
 									</li>
 								</ul>
 							</li>
-						</ul>
+							<!-- This is an additional on the right side menu for text-magnifier -->
+							<li>
+                                    <button id="magnifier-button" class="button" type="button">
+                                        <span class="show-for-sr">Accessibility Button</span>
+                                        <i class="fa fa-font fa-2x" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="menu" style="min-width:inherit;">
+                                        <li>
+                                            <a href="#" id="text-default" title="Toggle Default Text"
+                                                class="toggle-text-default">
+                                                <span class="show-for-sr">Default Text Size</span>
+                                                <i class="fa fa-font "></i><i class="fa fa-undo "></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="text-reduce" title="Toggle Reduce Text"
+                                                class="toggle-text-reduce">
+                                                <span class="show-for-sr">Reduce Text Size</span>
+                                                <i class="fa fa-font ">- -</i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="text-enlarge" title="Toggle Enlarge Text"
+                                                class="toggle-text-enlarge">
+                                                <span class="show-for-sr">Enlarge Text Size</span>
+                                                <i class="fa fa-font ">+ +</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+							<!--end for text magnifier-->
+						</ul> 
 					</nav>
 				</div>
 			</div>
@@ -261,4 +292,3 @@ Press esc, or click the close the button to close this dialog box.
 					<?php endif; ?>
 				</div>
 			</header>
-			<!-- masthead -->

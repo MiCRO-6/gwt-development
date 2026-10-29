@@ -5,7 +5,7 @@
  *
  * @package GWT
  * @since Government Website Template 2.0
- * eol-41
+ * eol-62
  */
 
 function govph_default_widget() {
@@ -60,6 +60,3 @@ function govph_default_widget() {
 	update_option('sidebars_widgets', $new_active_widgets);
 }
 add_action('after_switch_theme', 'govph_default_widget', 10, 2);
-
-
-

@@ -5,7 +5,7 @@
  *
  * @package GWT
  * @since Government Website Template 2.0
- * eol-19
+ * eol-20
  */
 ?>
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" autocomplete="off">

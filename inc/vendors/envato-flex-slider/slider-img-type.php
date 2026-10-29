@@ -1,4 +1,7 @@
 <?php
+/*
+ * eol-121
+ */
 define('CPT_NAME', "Slider Images");
 define('CPT_SINGLE', "Slider Image");
 define('CPT_TYPE', "slider-image");

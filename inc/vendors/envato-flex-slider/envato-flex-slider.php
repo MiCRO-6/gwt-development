@@ -7,7 +7,9 @@ Author: Joe Casabona
 Version: 0.5
 Author URI: http://www.casabona.org
 */
-
+/*
+ * eol-95
+ */
 /*Some Set-up*/
 define('EFS_PATH', get_template_directory_uri() . '/inc/vendors/' . basename( __DIR__ ) . '/' );
 define('EFS_NAME', "Envato FlexSlider");

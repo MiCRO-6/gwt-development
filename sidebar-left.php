@@ -3,7 +3,7 @@
  * The Sidebar containing the main widget areas.
  *
  * @package gwt_wp
- * eol-15
+ * eol-14
  */
 ?>
 <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
