@@ -1,11 +1,11 @@
 /*
- * Theme Name:		GWT-Wordpress-development v2.2.0
+ * Theme Name:		GWT-Development v2.7.0
  * Theme URI:		https://github.com/GOSD-DICT/gwt-wordpress/releases/tag/27.0.0
  * Description:		Custom WordPress theme based on the draft Unified Web Content Policy 
  *					prepared by the PCDSPO, DOST-ASTI, and DOST-ICTO. Theme is built on 
  *					HTML5 responsive WordPress framework based on ZURB's Foundation.
- * Version:			v2.2.0
- * Author:			J.K. | R.N. | GWHS Team
+ * Version:			v2.7.0
+ * Author:			J.K. | R.C. | GWHS Team
  * Author URI:		https://github.com/GOSD-DICT
  * License:			MIT License
  * License URI:		http://www.opensource.org/licenses/mit-license.php
@@ -357,7 +357,8 @@
  /**
   * 10.0 - Widgets
   */
- 
+
+
  .textwidget {
    text-align: center;
  }
@@ -763,7 +764,7 @@
  @media only screen and (max-width: 43.625em) {
    h1.logo img {
 	 font-size: 1rem;
-	 height: 100px;
+	 height: 100px; 
 	 object-fit: contain;
    }
    #textlogo-image img {

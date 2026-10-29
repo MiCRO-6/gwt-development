@@ -37,7 +37,6 @@ function pst_register_widgets() {
 add_action( 'widgets_init', 'pst_register_widgets' );
 
 
-
 class govph_widget_transparency extends WP_Widget {
 
 	function __construct() {

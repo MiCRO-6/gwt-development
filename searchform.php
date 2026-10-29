@@ -13,7 +13,8 @@
            placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'gwt_wp' ); ?>" 
            value="<?php echo esc_attr( get_search_query() ); ?>" 
            name="s" title="<?php _ex( 'Search for:', 'label', 'gwt_wp' ); ?>"
-           pattern="[a-zA-Z0-9 $\-]+"
+           pattern="[a-zA-Z0-9@\-]+"
            oninvalid="setCustomValidity('Please only use letters, numbers, spaces, and hyphens.')"
            oninput="setCustomValidity('')">
-</form>
+</form> 
+</script>

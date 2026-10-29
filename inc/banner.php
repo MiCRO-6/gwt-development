@@ -19,7 +19,10 @@ if (is_home()){
 		$banner_class = 'large-8 columns';
 		$banner_3_class = 'large-4 columns';
 	}
-$banner_class .= ' hide-for-small-only';
+// $banner_class .= ' hide-for-small-only'; // Disable it on small screens (mobile) to ensure the slider image remains visible on mobile view.
+}
+else{
+	$banner_class = 'large-12';
 }
 
 $container_class = '';
@@ -27,13 +30,31 @@ if(!is_home()){
   $container_class = 'banner-pads';
 }
 ?>		
-				<!-- banner -->
+
+
+<!-- Auxiliary Menu bar --> 
+<!-- Moved the Auxiliary Menu bar above the slider image -->
+<div id="auxiliary" class="show-for-large">
+	<div class="row">
+		<div class="small-12 large-12 columns toplayer">
+			<nav id="aux-main" class="nomargin show-for-medium-up" data-dropdown-content>
+				<ul class="dropdown menu" data-dropdown-menu>
+				<?php wp_nav_menu( ['theme_location'  => 'aux_nav', 'items_wrap' => '%3$s', 'container' => false, 'fallback_cb' => false, 'walker' => new Topbar_Nav_Menu()]); ?>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- End of Auxiliary Menu bar --> 
+
+
+<!-- banner -->
 <div class="container-banner <?php echo $container_class; ?>">
 	<?php govph_displayoptions( 'govph_slider_start' ); ?>
 	<?php if (is_home()): ?>
 		<?php if($banner_slider = efs_get_slider()): ?>
 			<?php if(govph_displayoptions( 'govph_slider_full' ) == 'active'): ?>
-				<div id="banner-slider" class="large-12 hide-for-small-only">
+				<div id="banner-slider" class=""> <!-- removed the large-12 hide-for-small-only -->
 			<?php else: ?>
 				<div id="banner-slider" class="<?php echo $banner_class ?>">
 			<?php endif; ?>
@@ -129,16 +150,5 @@ if(!is_home()){
 	<?php govph_displayoptions( 'govph_slider_end' ); ?>
 </div>
 
-<div id="auxiliary" class="show-for-large">
-	<div class="row">
-		<div class="small-12 large-12 columns toplayer">
-			<nav id="aux-main" class="nomargin show-for-medium-up" data-dropdown-content>
-				<ul class="dropdown menu" data-dropdown-menu>
-				<?php wp_nav_menu( ['theme_location'  => 'aux_nav', 'items_wrap' => '%3$s', 'container' => false, 'fallback_cb' => false, 'walker' => new Topbar_Nav_Menu()]); ?>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
 
 <?php include_once('breadcrumbs.php'); ?>
