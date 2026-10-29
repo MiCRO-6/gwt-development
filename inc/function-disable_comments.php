@@ -3,7 +3,6 @@
  * Disable all comments functionalities
  *
  * @package gwt_wp
- * eol-62
  */
  
 // Disable support for comments and trackbacks in post types
@@ -27,7 +26,7 @@ add_filter('pings_open', 'gwt_disable_comments_status', 20, 2);
 	
 // Hide existing comments
 function gwt_disable_comments_hide_existing_comments($comments) {
-	$comments = [];
+	$comments = array();
     return $comments;
 }
 add_filter('comments_array', 'gwt_disable_comments_hide_existing_comments', 10, 2);

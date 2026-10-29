@@ -3,9 +3,6 @@
  * @file
  * breadcrumb file template
  */
-/*
- * eol-18
- */
 // TODO: add a widget that can replace the default breadcrumb
 ?>
 

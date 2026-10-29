@@ -1,7 +1,4 @@
 <?php
-/*
- * eol-13
- */
 add_filter( 'rest_authentication_errors', function( $result ) {
 	if (!empty( $result ) ) {
 	return $result;
