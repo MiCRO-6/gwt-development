@@ -4,7 +4,7 @@
  *
  * @package GWT
  * @since Government Website Template 2.0
- * eol31
+ * eol-31
  */
 
 get_header();

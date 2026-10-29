@@ -103,12 +103,18 @@ if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 }
 
-function enqueue_jquery_migrate() {
-    wp_enqueue_script('jquery-migrate');
-}
-add_action('wp_enqueue_scripts', 'enqueue_jquery_migrate');
+/**
+* Access Logs
+*/
+require get_template_directory() . '/inc/access-logs.php';
 
-/*
+/**
+* User Activity Logs
+*/
+require get_template_directory() . '/inc/user-activity-logs.php';
+
+/**
 * Anti-Click Jacking
 */
 require get_template_directory() . '/inc/addsec.php';
+

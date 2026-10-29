@@ -4,6 +4,7 @@
  *
  * @package GWT
  * @since Government Website Template 2.0
+ * eol-143
  */
 
 class govph_widget_pst extends WP_Widget {
@@ -34,7 +35,6 @@ function pst_register_widgets() {
 }
 
 add_action( 'widgets_init', 'pst_register_widgets' );
-
 
 
 class govph_widget_transparency extends WP_Widget {
@@ -140,5 +140,4 @@ class govph_widget_foi extends WP_Widget {
 function foi_register_widgets() {
 	register_widget( 'govph_widget_foi' );
 }
-
 add_action( 'widgets_init', 'foi_register_widgets' );

@@ -4,7 +4,7 @@
  *
  * @package GWT
  * @since Government Website Template 2.0
- * eol-1067
+ * eol-1070
  */
 class GOVPH
 {
@@ -276,18 +276,18 @@ public function __construct()
   ?>
     <hr/>
   <?php
-  
   }
+
 
   public function govph_disable_search()
   {
     $true = ($this->options['govph_disable_search'] == 'true' ? "checked" : "");
   ?>
     <input type="checkbox" name="govph_options[govph_disable_search]" value="true" <?php echo $true ?>>
-    <span class="description">Check to display search field</span>
+    <span class="description">Check to disabled search field</span>
   <?php
   }
-
+  
 
   public function govph_logo_position_setting()
   {
@@ -837,11 +837,12 @@ function govph_displayoptions( $options ){
       $anchorColor = (!empty($option['govph_custom_anchorcolor_hover']) ? 'color:'.$option['govph_custom_anchorcolor_hover'].' !important;' : '');
       echo $anchorColor;
       break;
-      
-      case 'govph_disable_search':
-        return (isset($option['govph_disable_search']) ? $option['govph_disable_search'] : false);
 
-    // TODO: disable option for widget position, make it dynamic, displays sidebars when atleast one widget is active
+      case 'govph_disable_search':
+        return isset($option['govph_disable_search']) ? !$option['govph_disable_search'] : true;
+        break;
+    
+
     case 'govph_content_position':
       $content_class = 'large-12 medium-12 ';
       if(is_active_sidebar('left-sidebar')){

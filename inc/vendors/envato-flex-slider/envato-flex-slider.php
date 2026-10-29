@@ -7,9 +7,11 @@ Author: Joe Casabona
 Version: 0.5
 Author URI: http://www.casabona.org
 */
-
+/*
+ * eol-95
+ */
 /*Some Set-up*/
-define('EFS_PATH', get_template_directory_uri() . '/inc/vendors/' . basename( dirname(__FILE__) ) . '/' );
+define('EFS_PATH', get_template_directory_uri() . '/inc/vendors/' . basename( __DIR__ ) . '/' );
 define('EFS_NAME', "Envato FlexSlider");
 define ("EFS_VERSION", "0.5");
 
@@ -19,14 +21,20 @@ require_once('slider-img-type.php');
 function efs_get_slider(){
 	$efs_query = "post_type=slider-image";
 	query_posts($efs_query);
-	
+
 	global $post_id;
-	
+
+	//To fix the Undefined variable $count
+	$count = 0; // Initialize $count
+
+	//To fix the Undefined variable $slider
+    $slider = ''; // Initialize $slider
+
 	if (have_posts()) : 	
-		
-		$slider = '<div class="orbit" role="region" aria-label="Banner Slider" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+
+		$slider = '<div class="orbit" role="region" aria-label="Banner Slider" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out">
 					<ul class="orbit-container">';		
-		
+
 		$count = 0;
 		$x = 1;
 		while (have_posts()) : the_post();
@@ -34,8 +42,8 @@ function efs_get_slider(){
 		endwhile;
 
 		while (have_posts()) : the_post();
-			$img = get_the_post_thumbnail($post_id, 'full', array( 'class' => 'orbit-image' ));
-			
+			$img = get_the_post_thumbnail($post_id, 'full', ['class' => 'orbit-image']);
+
   		$slide_link = slider_link_get_meta_box_data(get_the_ID());
 			$caption = get_the_title();
 
@@ -53,6 +61,7 @@ function efs_get_slider(){
 	endif;
 	wp_reset_query();
 
+	//ERROR
 	if($count > 1) {
 		$slider .= '</ul>
 		<nav class="orbit-bullets">';
@@ -68,6 +77,7 @@ function efs_get_slider(){
 	}
 
 	return $slider;
+	//END OF ERROR
 }
 
 /**add the shortcode for the slider- for use in editor**/

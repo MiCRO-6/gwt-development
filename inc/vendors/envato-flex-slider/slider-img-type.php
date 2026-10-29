@@ -1,29 +1,38 @@
 <?php
+/*
+ * eol-121
+ */
 define('CPT_NAME', "Slider Images");
 define('CPT_SINGLE', "Slider Image");
 define('CPT_TYPE', "slider-image");
 define('CPT_THUMB_SIZE', 500);
 
-add_theme_support('post-thumbnails', array('slider-image'));  
+add_theme_support('post-thumbnails', ['slider-image']);  
   
 function efs_register() {  
-    $args = array(  
-        'label' => __(CPT_NAME),  
-        'singular_label' => __(CPT_SINGLE),  
-        'public' => true,  
-        'show_ui' => true,  
-        'capability_type' => 'post',  
-        'hierarchical' => false,  
-        'rewrite' => true,  
-        'supports' => array('title', 'editor', 'thumbnail'),
-        'public' => false,  // it's not public, it shouldn't have it's own permalink, and so on
-        'publicly_queryable' => true,  // you should be able to query it
-        'show_ui' => true,  // you should be able to edit it in wp-admin
-        'exclude_from_search' => true,  // you should exclude it from search results
-        'show_in_nav_menus' => false,  // you shouldn't be able to add it to menus
-        'has_archive' => false,  // it shouldn't have archive page
-        'rewrite' => false,  // it shouldn't have rewrite rules
-       );  
+    $args = [
+        'label' => __(CPT_NAME),
+        'singular_label' => __(CPT_SINGLE),
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => true,
+        'supports' => ['title', 'editor', 'thumbnail'],
+        'public' => false,
+        // it's not public, it shouldn't have it's own permalink, and so on
+        'publicly_queryable' => true,
+        // you should be able to query it
+        'show_ui' => true,
+        // you should be able to edit it in wp-admin
+        'exclude_from_search' => true,
+        // you should exclude it from search results
+        'show_in_nav_menus' => false,
+        // you shouldn't be able to add it to menus
+        'has_archive' => false,
+        // it shouldn't have archive page
+        'rewrite' => false,
+    ];  
   
     register_post_type(CPT_TYPE , $args );  
     set_post_thumbnail_size(CPT_THUMB_SIZE);
@@ -38,7 +47,7 @@ add_action('init', 'efs_disable_editor');
 
 /**
  * Add meta box
- *
+ * eol-118
  * @param post $post The post object
  * @link https://codex.wordpress.org/Plugin_API/Action_Reference/add_meta_boxes
  */
@@ -102,12 +111,11 @@ function slider_link_get_meta_box_data($post_id){
         return '#';
     }
 
-    if(substr($slider_link, 0, 7) == 'http://' || substr($slider_link, 0, 8) == 'https://'){
+    if(str_starts_with($slider_link, 'http://') || str_starts_with($slider_link, 'https://')){
         return $slider_link;
     }
-    if(substr($slider_link, 0, 1) != '/'){
+    if(!str_starts_with($slider_link, '/')){
         $slider_link = '/'.$slider_link;
     }
     return get_site_url().$slider_link;
 }
-

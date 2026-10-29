@@ -1,4 +1,7 @@
 <?php
+/*
+ * eol-08
+ */
 function block_frames() {
     header('X-FRAME-OPTIONS: SAMEORIGIN');
 }
