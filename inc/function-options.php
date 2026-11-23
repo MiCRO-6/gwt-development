@@ -296,7 +296,7 @@ public function __construct()
   ?>
     <input type="radio" name="govph_options[govph_logo_position]" value="left" <?php echo $left ?>> Left <br>
     <input type="radio" name="govph_options[govph_logo_position]" value="center" <?php echo $center ?>> Center
-    <br/><span class="description">Set position for logo</span>
+    <br/><span class="description">Set position for Agency Header</span>
   <?php
   }
 
