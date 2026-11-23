@@ -4,9 +4,8 @@
  * breadcrumb file template
  */
 /*
- * eol-18
+ * eol-17
  */
-// TODO: add a widget that can replace the default breadcrumb
 ?>
 
 <nav id="breadcrumbs" class="anchor" aria-label="You are here:" role="navigation">
