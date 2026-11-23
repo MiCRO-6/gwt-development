@@ -6,6 +6,26 @@ the sections to be included, what are the required measurements, what are the ot
 to include, etc. 
 
 ## What's New?
+<<<<<<< HEAD
+**27.2.0** <sub>*Minor Release*</sub>
+
+*Change Logs*
+ - [added]      Text magnifier beside the accessibility menu
+ - [fixed]      White page issue on customize.php when using The events Calendar Plugin
+ - [refined]    Input validation on the search bar
+ - [update]     Changed the 'Continue Reading' text on truncated homepage posts to 'Read More'
+ - [update]     Slider images are now visible on mobile view
+ - [update]     Moved the Transparency Seal and FOI logo from the left sidebar to the Ear Content 2 section, below the PST.
+ - [update]     Search bar is now enabled by default
+ - [update]     Moved the page title below the auxiliary menu
+ - [security]   PHP compatibility up to PHP 8.2
+
+## Compatibility Specification
+- PHP 7.4 - 8.3
+- WordPress version 6.7 and up
+- WAMP Server version 3.2.3 and up
+- XAMPP Server version 8.0.3 and up
+=======
 **27.0.0** <sub>*Major Release*</sub>
 
 *Change Logs*
@@ -29,6 +49,7 @@ to include, etc.
 - WordPress version 6.3 and up
 - WAMP Server version 3.2.3 - 3.3.2
 - XAMPP Server version 8.0.3
+>>>>>>> origin/main
 
 > [!IMPORTANT]
 > - **Use only the** [Approved Plugins](https://bit.ly/List-of-approved-plugins) by the **DICT-GWHS Team** to avoid any possible errors and vulnerability
@@ -62,9 +83,56 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 
 ## Previous Versions
 
+<<<<<<< HEAD
+**27.1.0** <sub>*Minor Release*</sub>
+
+*Change Logs*
+ - [enhanced]   Input sanitation on search bar
+ - [update]     Moved the Transparency Seal and FOI logo from the left sidebar to the Ear Content 2 section, below the PST.
+ - [update]     PHP compatibility up to PHP 8.2
+
+## Compatibility Specification
+- PHP 7.4 - 8.2
+- WordPress version 6.5 and up
+- WAMP Server version 3.2.3 and up
+- XAMPP Server version 8.0.3 and up
+
+**27.0.0** <sub>*Major Release*</sub>
+
+*Change Logs*
+ - [added]       Bold font-weight option on hovering and icons for the header menus
+ - [added]       Input validation for search bar
+ - [added]       FOI sidebar widget at the bottom of Transparency Seal Logo (Once click redirected to [https://www.foi.gov.ph])
+ - [added]       REST API endpoint authentication
+ - [added]       Font weight bold for menus on hover and active
+ - [added]       Justify text on contents as default
+ - [added]       Default Font Size for Text Heading if Image Logo is disabled in Theme Options Page
+ - [enhanced]    Masthead to flex when screen resizing | For screen with size >= 699px
+ - [enhanced]    Foundation folder/file/code that uses relative URL to use absolute URL
+ - [fixed]       Compatibility issues on localhost
+ - [fixed]       Critical error on theme options
+ - [fixed]       Agency logo, Agency name | Agency tagline size
+ - [temporary]   Disabled input field on Search shortcut key
+ - [update]      PHP compatibility up to PHP 8.1
+
+#### Compatibility Specification
+- PHP 7.4 - 8.1
+- WordPress version 6.3 and up
+- WAMP Server version 3.2.3 - 3.3.2
+- XAMPP Server version 8.0.3
+
+<br><hr>
+
 **26.0.0**
 <sub>*no information available*</sub>
 
+<br><hr>
+
+=======
+**26.0.0**
+<sub>*no information available*</sub>
+
+>>>>>>> origin/main
 **25.3.3**
 - [Update] Tabbed Theme Options
 - [fixed] conditional display on rightsidebar

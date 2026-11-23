@@ -3,7 +3,11 @@
  * gwt_wp functions and definitions
  *
  * @package gwt_wp
+<<<<<<< HEAD
+ * eol-129
+=======
  * eol-118
+>>>>>>> origin/main
  */
 
 /**
@@ -87,6 +91,11 @@ require get_template_directory() . '/inc/function-access.php';
 require get_template_directory() . '/inc/function-activity.php';
 
 /**
+<<<<<<< HEAD
+ * Customizer additions.
+ */
+//require get_template_directory() . '/inc/customizer.php';
+=======
 * Plugin events
 */
 require get_template_directory() . '/inc/function-plugins.php';
@@ -95,6 +104,7 @@ require get_template_directory() . '/inc/function-plugins.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+>>>>>>> origin/main
 
 /**
  * Envato Flexslider
@@ -107,12 +117,34 @@ require get_template_directory() . '/inc/vendors/envato-flex-slider/envato-flex-
 require get_template_directory() . '/inc/function-disable_api.php';
 
 /**
+<<<<<<< HEAD
+ * Minimum WordPress Version Check
+ * Ensures that the theme only runs on WordPress 6.7 or higher.
+ * Displays an admin notice and prevents activation on older versions.
+ */
+require get_template_directory() . '/inc/function-wp_required-version.php';
+=======
  * GWT only works in WordPress 6.5 or later.
  * This file provides backward compatibility protection for older WordPress versions.
  */
 require get_template_directory() . '/inc/back-compat.php';
+>>>>>>> origin/main
 
 /**
 * Anti-Click Jacking
 */
+<<<<<<< HEAD
 require get_template_directory() . '/inc/addsec.php';
+
+/**
+* Open external links in a new tab 
+*/
+//require get_template_directory() . '/inc/function-target_blank.php';
+
+/**
+* Theme Activation Notice
+*/
+require get_template_directory() . '/inc/function-theme-activation-notice.php';
+=======
+require get_template_directory() . '/inc/addsec.php';
+>>>>>>> origin/main

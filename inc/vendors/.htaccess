@@ -1,0 +1,6 @@
+<FilesMatch "\.(log|txt|bak|zip)$">
+  Require all denied
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
