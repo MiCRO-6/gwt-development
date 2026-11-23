@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Government Website Template 2.5.20160730\n"
-"Report-Msgid-Bugs-To: https://helpdesk.i.gov.ph\n"
+"Report-Msgid-Bugs-To: https://gwhssupport@dict.gov.ph\n"
 "POT-Creation-Date: 2015-11-20 12:58:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

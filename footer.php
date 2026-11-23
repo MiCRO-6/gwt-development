@@ -5,8 +5,8 @@
  * Contains the closing of the id=main div and all content after
  *
  * @package GWT
- * @since Government Website Template 2.0
- * eol-88
+ * @since Government Website Template 27.0
+ * eol-90
  */
 ?>
 
@@ -54,13 +54,15 @@ is_active_sidebar('footer-4')): ?>
 </div><!-- #off-canvass-wrapper inner -->
 </div><!-- #off-canvass-wrapper -->
 
+<!-- TODO:  update the pst and footer script to the updated domain hosting. -->
+
 <!-- standard footer script -->
 <script type="text/javascript">
 (function(d, s, id) {
   var js, gjs = d.getElementById('gwt-standard-footer');
 
   js = d.createElement(s); js.id = id;
-  js.src = "//gwhs.i.gov.ph/gwt-footer/footer.js";
+  js.src = "//gwt.strata.gov.ph/gwt-footer/footer.js";
   gjs.parentNode.insertBefore(js, gjs);
 }(document, 'script', 'gwt-footer-jsdk'));
 </script>
@@ -71,7 +73,7 @@ is_active_sidebar('footer-4')): ?>
 (function(d, eId) {
 	var js, gjs = d.getElementById(eId);
 	js = d.createElement('script'); js.id = 'gwt-pst-jsdk';
-	js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
+	js.src = "//gwt.strata.gov.ph/pst/gwtpst.js?"+new Date().getTime();
 	gjs.parentNode.insertBefore(js, gjs);
 }(document, 'gwt-pst'));
 
