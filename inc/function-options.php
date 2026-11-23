@@ -214,7 +214,7 @@ public function __construct()
     add_settings_field('govph_agency_name', 'Agency Name', [$this, 'govph_agency_name'], __FILE__, 'govph_main_section');
     add_settings_field('govph_agency_tagline', 'Agency Tagline', [$this, 'govph_agency_tagline'], __FILE__, 'govph_main_section');
     add_settings_field('govph_header_font_color', 'Header Font Color', [$this, 'govph_header_font_color'], __FILE__, 'govph_main_section');
-    add_settings_field('govph_logo_position', 'Logo Position', [$this, 'govph_logo_position_setting'], __FILE__, 'govph_main_section');
+    add_settings_field('govph_logo_position', 'Agency Header Position', [$this, 'govph_logo_position_setting'], __FILE__, 'govph_main_section');
     add_settings_field('govph_logo', 'Image Logo', [$this, 'govph_logo_setting'], __FILE__, 'govph_main_section');
     add_settings_field('govph_headercolor', 'Header Background Color', [$this, 'govph_header_color_setting'], __FILE__, 'govph_main_section');
     add_settings_field('govph_headerimage', 'Header Background Image', [$this, 'govph_header_image_setting'], __FILE__, 'govph_main_section');
