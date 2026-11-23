@@ -8,7 +8,7 @@
  *
  * @package GWT
  * @since Government Website Template v27.1.0
- * eol-134
+ * eol-165
  */
  
 if ( ! defined( 'ABSPATH' ) ) {
@@ -17,12 +17,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'GWT_MIN_WP_VERSION', '6.7' );
 
+/**
+ * --------------------------------------------------------
+ * SECURITY VALIDATION FUNCTIONS
+ * --------------------------------------------------------
+ */
+
+/**
+ * Validate rollback execution safety
+ */
 function gwt_validate_environment() {
 
+	// Admin capability check
 	if ( ! current_user_can( 'switch_themes' ) ) {
 		return false;
 	}
 
+	// Verify previous theme option integrity
 	$previous_theme = sanitize_text_field(
 		get_option( 'gwt_previous_theme' )
 	);
@@ -31,14 +42,14 @@ function gwt_validate_environment() {
 		return false;
 	}
 
-
+	// Check if theme actually exists
 	$theme = wp_get_theme( $previous_theme );
 
 	if ( ! $theme->exists() ) {
 		return false;
 	}
 
-
+	// Version protection check
 	if ( version_compare( $GLOBALS['wp_version'], GWT_MIN_WP_VERSION, '>=' ) ) {
 		return false;
 	}
@@ -46,6 +57,10 @@ function gwt_validate_environment() {
 	return $previous_theme;
 }
 
+
+/**
+ * Save previous theme before switching
+ */
 add_action( 'switch_theme', function() {
 
 	if ( ! current_user_can( 'switch_themes' ) ) {
@@ -62,6 +77,10 @@ add_action( 'switch_theme', function() {
 
 });
 
+
+/**
+ * Rollback handler
+ */
 function gwt_switch_theme() {
 
 	$rollback_theme = gwt_validate_environment();
@@ -85,6 +104,10 @@ if ( version_compare( $GLOBALS['wp_version'], GWT_MIN_WP_VERSION, '<' ) ) {
 	add_action( 'after_switch_theme', 'gwt_switch_theme' );
 }
 
+
+/**
+ * Admin Notice
+ */
 function gwt_upgrade_notice() {
 
 	printf(
@@ -100,6 +123,10 @@ function gwt_upgrade_notice() {
 	);
 }
 
+
+/**
+ * Prevent Customizer Access
+ */
 add_action( 'load-customize.php', function() {
 
 	if ( version_compare( $GLOBALS['wp_version'], GWT_MIN_WP_VERSION, '<' ) ) {
@@ -116,6 +143,10 @@ add_action( 'load-customize.php', function() {
 
 });
 
+
+/**
+ * Prevent Theme Preview
+ */
 add_action( 'template_redirect', function() {
 
 	if (

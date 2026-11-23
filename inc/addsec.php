@@ -3,8 +3,8 @@
  *  Block the site from being displayed in an iframe.
  *
  * @package GWT
- * @since Government Website Template v27.1.0
- * eol-13
+ * @since Government Website Template v27.0
+ * eol-73
  */
 
 function block_frames() {

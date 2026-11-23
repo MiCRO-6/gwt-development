@@ -1,8 +1,15 @@
 /*
- * Theme Name:      GWT-Development v2.33.1
+<<<<<<< HEAD
+ * Theme Name:      GWT-Development v2.33.0
  * Theme URI:       https://bit.ly/gwtversions
  * Description:	    The Government Web Template Design is an initiative of the Philippine Government to institutionalize a corporate online identity for all government websites through standardized design, navigation, and content. This custom WordPress theme is based on the draft Unified Web Content Policy prepared by the PCDSPO, DOST-ASTI, and DOST-ICTO. The theme is built on an HTML5 responsive WordPress framework using ZURB's Foundation. 
- * Version:			    2.33.1
+ * Version:			    2.33.0
+=======
+ * Theme Name:      GWT-Development v2.26.0
+ * Theme URI:       https://bit.ly/gwtversions
+ * Description:	    The Government Web Template Design is an initiative of the Philippine Government to institutionalize a corporate online identity for all government websites through standardized design, navigation, and content. This custom WordPress theme is based on the draft Unified Web Content Policy prepared by the PCDSPO, DOST-ASTI, and DOST-ICTO. The theme is built on an HTML5 responsive WordPress framework using ZURB's Foundation. 
+ * Version:			    2.26.0
+>>>>>>> origin/main
  * Author:			    J.K. | GWHS Team
  * Author URI:		  https://github.com/GOSD-DICT
  * License:			    MIT License
@@ -375,12 +382,8 @@
    font-family: "Roboto", sans-serif;
    font-size: 0.8rem;
    line-height: 1.2;
-   
+   text-align: right;
  } 
-
- .ear-content.widget.anchor.widget_block #pst-container {
-    text-align: center;
-}
 
  #back-to-top {
    position: fixed;
@@ -734,218 +737,156 @@
    width: device-width;
  }
  
+ /*Small screens*/
  
-/*Small screens*/
-
-/**
- * <= 360px
- */
-@media only screen and (max-width: 20em) {
-    #agency-name {
-        font-size: 11.5vw !important;
-    }
-
-    .thumbnail {
-        width: 300%;
-    }
-}
-
-/**
- * <= 481px
- */
-@media only screen and (max-width: 30.063em) {
-    #agency-name {
-        /* Todo for improvement */
-        font-size: 6vw;
-        /* Todo for improvement -- end*/
-    }
-}
-
-/**
- * <= 698px
- */
-@media only screen and (max-width: 43.625em) {
-    h1.logo img {
-        font-size: 1rem;
-        height: 100px;
-        object-fit: contain;
-    }
-
-    #textlogo-image img {
-        height: 100px;
-        object-fit: contain;
-    }
-
-    #textlogo-inner-wrapper {
-        margin-top: 10px;
-    }
-}
-
-/*Medium screens*/
-
-/**
- * >= 699px
- */
-@media only screen and (min-width: 43.6875em) {
-    #agency-name {
-        font-size: 3vw;
-    }
-
-    #textlogo-inner-wrapper {
-        margin-top: 10px;
-        margin: 15px 0 0 5px;
-    }
-
-    #textlogo-wrapper {
-        display: flex;
-    }
-
-    .flex-container {
-        display: flex;
-    }
-
-    .flex-container .entry-wrapper {
-        padding-left: 15px;
-    }
-
-    .flex-container img {
-        width: 150px;
-        height: 145px;
-        object-fit: cover;
-    }
-}
-
-/**
- * 699px <=> 1024px
- */
-@media only screen and (min-width: 43.6875em) and (max-width: 64em) {
-}
-
-/**
- * <= 1023px
- */
-@media only screen and (max-width: 63.9375em) {
-    .container-masthead {
-        margin-top: 42px;
-        border-bottom: 1px solid #f2f2f2;
-    }
-
-    .banner-content {
-        padding: 1rem 0;
-    }
-
-    /* Center Agency Branding */
-    #textlogo-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    #textlogo-inner-wrapper {
-        margin: 10px 0 0 0;
-        text-align: center;
-    }
-
-    #textlogo-image {
-        text-align: center;
-    }
-
-    #agency-name {
-        text-align: center;
-    }
-
-    /* Center Philippine Standard Time */
-    #pst-container {
-        align-items: center;
-    }
-}
-
-/*Large screens*/
-
-/**
- * >= 1024px
- */
-@media only screen and (min-width: 64em) {
-    #main-nav .top-bar-left .dropdown li ul,
-    #aux-main .dropdown li ul {
-        -webkit-box-shadow: 6px 10px 10px -6px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 6px 10px 10px -6px rgba(0, 0, 0, 0.5);
-        box-shadow: 6px 10px 10px -6px rgba(0, 0, 0, 0.5);
-        border: none;
-    }
-
-    #main-nav .top-bar-right .dropdown li ul {
-        -webkit-box-shadow: -6px 6px 10px -6px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: -6px 6px 10px -6px rgba(0, 0, 0, 0.5);
-        box-shadow: -6px 6px 10px -6px rgba(0, 0, 0, 0.5);
-        border: none;
-    }
-
-    .container-banner {
-        padding: 1rem 0;
-    }
-}
-
-/**
- * 1025px <=> 1440px
- */
-@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
-    #agency-name {
-        font-size: inherit;
-    }
-}
-
-/*XLarge screens*/
-
-/**
- * >= 1441px
- */
-@media only screen and (min-width: 90.063em) {
-    #agency-name {
-        font-size: inherit;
-    }
-}
-
-/**
- * 1441px <=> 1920px
- */
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-}
-
-/*XXLarge screens*/
-
-/**
- * >= 1921px
- */
-@media only screen and (min-width: 120.063em) {
-}
-
-/* Philippine Standard Time */
-#pst-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 5px;
-}
-
-#pst-logos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-}
-
-/* Mobile and Tablet */
-@media only screen and (max-width: 63.9375em) {
-    #pst-container {
-        width: 100% !important;
-        align-items: center !important;
-        text-align: center !important;
-    }
-
-    #pst-logos {
-        justify-content: center !important;
-        width: 100%;
-    }
-}
+ /**
+  * <= 360px
+  */
+ @media only screen and (max-width: 20em) {
+   #agency-name {
+	 font-size: 11.5vw !important;
+   }
+   .thumbnail {
+	 width: 300%;
+   }
+ }
+ 
+ /**
+  * <= 481px
+  */
+ @media only screen and (max-width: 30.063em) {
+   #agency-name {
+	 /* Todo for improvement */
+	 font-size: 6vw;
+	 /* Todo for improvement -- end*/
+   }
+ }
+ 
+ /**
+  * <= 698px
+  */
+ @media only screen and (max-width: 43.625em) {
+   h1.logo img {
+	 font-size: 1rem;
+	 height: 100px; 
+	 object-fit: contain;
+   }
+   #textlogo-image img {
+	 height: 100px;
+	 object-fit: contain;
+   }
+   #textlogo-wrapper {
+	 text-align: center;
+   }
+   #textlogo-inner-wrapper {
+	 margin-top: 10px;
+   }
+ }
+ 
+ /*Medium screens*/
+ 
+ /**
+  * >= 699px
+  */
+ @media only screen and (min-width: 43.6875em) {
+   #agency-name {
+	 font-size: 3vw;
+   }
+   #textlogo-inner-wrapper {
+	 margin-top: 10px;
+	 margin: 15px 0 0 5px;
+   }
+   #textlogo-wrapper {
+	 display: flex;
+   }
+ 
+   .flex-container {
+	 display: flex;
+ 
+   }
+   .flex-container .entry-wrapper {
+	 padding-left: 15px; 
+   }
+   .flex-container img{
+	 width: 150px;
+	 height: 145px;
+	 object-fit:cover;   
+   }
+ }
+ 
+ /**
+  * 699px <=> 1024px
+  */
+ @media only screen and (min-width: 43.6875em) and (max-width: 64em) {
+ }
+ 
+ /**
+  * <= 1023px
+  */
+ @media screen and (max-width: 63.9375em) {
+   .container-masthead {
+	 margin-top: 42px;
+	 border-bottom: 1px solid #f2f2f2;
+   }
+   .banner-content {
+	 padding: 1rem 0;
+   }
+ }
+ 
+ /*Large screens*/
+ 
+ /**
+  * >= 1024px
+  */
+ @media only screen and (min-width: 64em) {
+   #main-nav .top-bar-left .dropdown li ul,
+   #aux-main .dropdown li ul {
+	 -webkit-box-shadow: 6px 10px 10px -6px rgba(0, 0, 0, 0.5);
+	 -moz-box-shadow: 6px 10px 10px -6px rgba(0, 0, 0, 0.5);
+	 box-shadow: 6px 10px 10px -6px rgba(0, 0, 0, 0.5);
+	 border: none;
+   }
+   #main-nav .top-bar-right .dropdown li ul {
+	 -webkit-box-shadow: -6px 6px 10px -6px rgba(0, 0, 0, 0.5);
+	 -moz-box-shadow: -6px 6px 10px -6px rgba(0, 0, 0, 0.5);
+	 box-shadow: -6px 6px 10px -6px rgba(0, 0, 0, 0.5);
+	 border: none;
+   }
+   .container-banner {
+	 padding: 1rem 0;
+   }
+ }
+ 
+ /**
+  * 1025px <=> 1440px
+  */
+ @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+   #agency-name {
+	 font-size: inherit;
+   }
+ }
+ 
+ /*XLarge screens*/
+ 
+ /**
+  * >= 1441px
+  */
+ @media only screen and (min-width: 90.063em) {
+   #agency-name {
+	 font-size: inherit;
+   }
+ }
+ 
+ /**
+  * 1441px <=> 1920px
+  */
+ @media only screen and (min-width: 90.063em) and (max-width: 120em) {
+ }
+ 
+ /*XXLarge screens*/
+ 
+ /**
+  * >= 1921px
+  */
+ @media only screen and (min-width: 120.063em) {
+ }

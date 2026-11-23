@@ -33,7 +33,8 @@ class GOVPH
     'govph_custom_border_color' => '', 
     'govph_custom_panel_bottom' => '', 
     'govph_custom_border_width' => '', 
-    'govph_custom_border_radius' => '',  
+    'govph_custom_border_radius' => '', 
+    'govph_custom_border_color' => '', 
     'govph_custom_background_color' => '', 
     'govph_custom_headings_text' => '', 
     'govph_custom_headings_inner_page_size' => '', 
@@ -208,8 +209,7 @@ public function __construct()
     register_setting('govph_options','govph_options');
     add_settings_section('govph_main_section', '', [$this, 'govph_main_section_cb'], __FILE__);
     add_settings_field('govph_general_section', '<h3>General Options<h3>', [$this, 'govph_general_section'], __FILE__, 'govph_main_section');
-    //Search bar option enabled by default
-    add_settings_field('govph_disable_search', 'Search Bar', [$this, 'govph_disable_search'], __FILE__, 'govph_main_section');
+    add_settings_field('govph_disable_search', 'Search Enable', [$this, 'govph_disable_search'], __FILE__, 'govph_main_section');
     add_settings_field('govph_logo_enable', 'Enable Image Logo', [$this, 'govph_logo_enable'], __FILE__, 'govph_main_section');
     add_settings_field('govph_agency_name', 'Agency Name', [$this, 'govph_agency_name'], __FILE__, 'govph_main_section');
     add_settings_field('govph_agency_tagline', 'Agency Tagline', [$this, 'govph_agency_tagline'], __FILE__, 'govph_main_section');
