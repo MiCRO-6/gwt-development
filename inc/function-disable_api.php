@@ -1,6 +1,10 @@
 <?php
-/*
- * eol-13
+/**
+ * disables the REST API for non-logged in users
+ *
+ * @package GWT
+ * @since Government Website Template v27.0
+ * eol-17
  */
 add_filter( 'rest_authentication_errors', function( $result ) {
 	if (!empty( $result ) ) {

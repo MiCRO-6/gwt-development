@@ -1,16 +1,23 @@
 <?php
+/**
+ *  This file logs user login and logout activities, capturing user details such as login time, roles, IP addresses, and user agent.
+ *
+ * @package GWT
+ * @since Government Website Template v27.1
+ * eol-86
+ */
+
 function log_user_login_info($user_login, $user) {
-    $datetime   = new DateTime('now', new DateTimeZone('Asia/Manila')); // GMT+8
-    $log_time   = $datetime->format('Y-m-d H:i:s P'); // Include offset as +08:00
+    $datetime   = new DateTime('now', new DateTimeZone('Asia/Manila'));
+    $log_time   = $datetime->format('Y-m-d H:i:s P'); 
 
     $user_agent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown Agent';
 
-    // Get the user's IP address, considering proxies
+   
     $client_ip = $_SERVER['HTTP_CLIENT_IP'] ?? 'No Client IP';
     $forwarded_ip = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? 'No Forwarded IP';
     $remote_ip = $_SERVER['REMOTE_ADDR'] ?? 'No Remote IP';
 
-    // Log all IP addresses
     $ip_addresses = "Client IP: {$client_ip} | Forwarded IP: {$forwarded_ip} | Remote IP: {$remote_ip}";
 
     $role = !empty($user->roles) ? implode(', ', $user->roles) : 'no role';
@@ -33,7 +40,6 @@ function log_user_login_info($user_login, $user) {
 }
 add_action('wp_login', 'log_user_login_info', 10, 2);
 
-// Capture user before logout
 function cache_user_before_logout() {
     if (is_user_logged_in()) {
         global $logout_user;
@@ -49,17 +55,15 @@ function log_user_logout_info() {
         return;
     }
 
-    $datetime   = new DateTime('now', new DateTimeZone('Asia/Manila')); // GMT+8
-    $log_time   = $datetime->format('Y-m-d H:i:s P'); // Include offset as +08:00
+    $datetime   = new DateTime('now', new DateTimeZone('Asia/Manila'));
+    $log_time   = $datetime->format('Y-m-d H:i:s P');
 
     $user_agent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown Agent';
 
-    // Get all possible sources of IP address
     $client_ip = $_SERVER['HTTP_CLIENT_IP'] ?? 'No Client IP';
     $forwarded_ip = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? 'No Forwarded IP';
     $remote_ip = $_SERVER['REMOTE_ADDR'] ?? 'No Remote IP';
 
-    // Log all IP addresses
     $ip_addresses = "Client IP: {$client_ip} | Forwarded IP: {$forwarded_ip} | Remote IP: {$remote_ip}";
 
     $log_message = "[{$log_time}] [Logged out] User: {$logout_user->user_login} | {$ip_addresses} | Agent: {$user_agent}" . PHP_EOL;

@@ -3,7 +3,7 @@
  * gwt_wp functions and definitions
  *
  * @package gwt_wp
- * eol-119
+ * eol-118
  */
 
 /**
@@ -57,19 +57,9 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
- * Customizer additions.
- */
-// require get_template_directory() . '/inc/customizer.php';
-
-/**
  * Load Jetpack compatibility file.
  */
 // require get_template_directory() . '/inc/jetpack.php';
-
-/**
- * Theme Options Page.
- */
-require get_template_directory() . '/inc/function-options.php';
 
 /**
  * Custom Post Types
@@ -77,19 +67,29 @@ require get_template_directory() . '/inc/function-options.php';
 // require get_template_directory() . '/inc/custom-post-types.php';
 
 /**
+ * Theme Options Page.
+ */
+require get_template_directory() . '/inc/function-options.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
-* Function for Access
+* Access
 */
 require get_template_directory() . '/inc/function-access.php';
 
 /**
-* Function for Activity
+*  Activity
 */
 require get_template_directory() . '/inc/function-activity.php';
+
+/**
+* Plugin events
+*/
+require get_template_directory() . '/inc/function-plugins.php';
 
 /**
  * Customizer additions.
@@ -107,11 +107,10 @@ require get_template_directory() . '/inc/vendors/envato-flex-slider/envato-flex-
 require get_template_directory() . '/inc/function-disable_api.php';
 
 /**
- * GWT only works in WordPress 4.4 or later.
+ * GWT only works in WordPress 6.5 or later.
+ * This file provides backward compatibility protection for older WordPress versions.
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.4-alpha', '<' ) ) {
-	require get_template_directory() . '/inc/back-compat.php';
-}
+require get_template_directory() . '/inc/back-compat.php';
 
 /**
 * Anti-Click Jacking

@@ -1,0 +1,11 @@
+/************************************************
+*						*
+*		   				*
+*		 GWT v27.1.0			*
+*						*
+*						*
+************************************************/
+Theme Name:	gwt-development-27.1.0
+Theme Version:  v27.1.0
+Author:		JK | GWHS
+Author email:	gwhssupport@dict.gov.ph

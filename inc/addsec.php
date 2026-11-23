@@ -1,7 +1,12 @@
 <?php
-/*
- * eol-08
+/**
+ *  Block the site from being displayed in an iframe.
+ *
+ * @package GWT
+ * @since Government Website Template v27.0
+ * eol-73
  */
+
 function block_frames() {
     header('X-FRAME-OPTIONS: SAMEORIGIN');
 }

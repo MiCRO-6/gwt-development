@@ -6,10 +6,9 @@
  *
  * @package GWT
  * @since Government Website Template 2.0
- * eol-89
+ * eol-88
  */
 ?>
-
 
 <!-- agency footer -->
 <?php if(is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3') ||
