@@ -9,21 +9,27 @@ to include, etc.
 **27.1.1** <sub>*Minor Release*</sub>
 
 *Change Logs*
- - [added]      Text magnifier beside the accessibility menu
- - [fixed]      White page issue on customize.php when using The events Calendar Plugin
- - [refined]    Input validation on the search bar
- - [update]     Changed the 'Continue Reading' text on truncated homepage posts to 'Read More'
- - [update]     Slider images are now visible on mobile view
- - [update]     Moved the Transparency Seal and FOI logo from the left sidebar to the Ear Content 2 section, below the PST.
- - [update]     Search bar is now enabled by default
- - [update]     Moved the page title below the auxiliary menu
- - [security]   PHP compatibility up to PHP 8.5
+ - [added] Slider image visibility on mobile devices.
+ - [added] Text magnifier to the top-right menu, with options to enlarge, reduce, and reset font size.
+ - [refined] Search bar input sanitization.
+ - [enabled] Search bar by default.
+ - [added] Theme activation notice.
+ - [updated] Auxiliary Menu position to appear above the slider image.
+ - [updated] "Continue Reading" label to "Read More."
+ - [enhanced] Transparency Seal and FOI placement by moving them to ear-content-2, below the PST.
+ - [enhanced] Responsive breakpoint for centered widgets, adjusted from 767px to 1024px to accommodate modern tablet screen sizes.
+ - [updated] Theme options label from "Logo Position" to "Agency Header Position."
+ - [enhanced] Agency heading alignment to automatically center at 1023px and below, ensuring proper alignment with the ear-content-2 widgets.
+ - [updated] PST and footer URLs to use the new hosting domain.
+ - [updated] PHP compatibility to support PHP 8.5.
+
 
 ## Compatibility Specification
-- PHP 7.4 - 8.5
-- WordPress version 6.7 and up
-- WAMP Server version 3.2.3 and up
-- XAMPP Server version 8.0.3 and up
+ - PHP 7.4 - 8.5
+ - WordPress version 6.3 and up
+ - WAMP Server version 3.2.3 - 3.4.3
+ - XAMPP Server version 8.5.13
+
 
 > [!IMPORTANT]
 > - **Use only the** [Approved Plugins](https://bit.ly/List-of-approved-plugins) by the **DICT-GWHS Team** to avoid any possible errors and vulnerability
